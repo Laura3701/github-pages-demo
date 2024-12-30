@@ -5,17 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .button {
+      background-color: pink;
+      border: 1px solid white;
+      border-radius: 5px;
+      font-size: 24px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  </style>
 </head>
 
 <body>
-  <script>
-    let astro = prompt('请输入你的星座')
+  <div class="button-container">
+    <button class="button">CLICK ME</button>
+  </div>
 
-    if (astro) {
-      alert('不论你是什么星座，胡哥都是最帅的！')
-    } else {
-      document.write('请刷新页面并输入你的星座')
-    }
+  <script>
+    const btn = document.querySelector('.button-container .button')
+    btn.addEventListener('click', function () {
+      alert('皓麟超棒的哦~~')
+    })
   </script>
 </body>
 
